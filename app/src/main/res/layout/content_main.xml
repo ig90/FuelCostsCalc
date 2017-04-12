@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundGravity="fill_horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="f.igor.ilezawache.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="0dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/inputKm"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="podaj ilość km"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textColorLink="?android:attr/colorControlNormal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <EditText
+            android:id="@+id/inputConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="podaj spalanie (l/100km)"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textColorLink="?android:attr/colorControlNormal"
+            tools:layout_editor_absoluteX="-17dp"
+            tools:layout_editor_absoluteY="-79dp" />
+
+        <EditText
+            android:id="@+id/inputPrice"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="podaj cenę paliwa (zł/litr)"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textColorLink="?android:attr/colorControlNormal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <EditText
+            android:id="@+id/inputPeople"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="ile osób się zrzuca?"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textColorLink="?android:attr/colorControlNormal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="186dp" />
+
+        <Button
+            android:id="@+id/bttnCalc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="doCalc"
+            android:text="Oblicz"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_weight="0.05"
+            android:paddingLeft="2dp"
+            android:paddingTop="10dp"
+            android:text=" Koszt na 1 osobę:"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <EditText
+            android:id="@+id/outputResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
